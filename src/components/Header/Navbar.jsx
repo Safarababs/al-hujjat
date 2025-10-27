@@ -88,19 +88,19 @@ function TopbarNavbar() {
               <a href="/" className="nav-item nav-link active">
                 Home
               </a>
-              <a href="/" className="nav-item nav-link">
+              <a href="/about" className="nav-item nav-link">
                 About
               </a>
-              <a href="/" className="nav-item nav-link">
-                Activities
+              <a href="/courses" className="nav-item nav-link">
+                Courses
               </a>
-              <a href="/" className="nav-item nav-link">
+              <a href="/events" className="nav-item nav-link">
                 Events
               </a>
-              <a href="/" className="nav-item nav-link">
+              <a href="/sermons" className="nav-item nav-link">
                 Sermons
               </a>
-              <div className="nav-item dropdown">
+              {/* <div className="nav-item dropdown">
                 <a
                   href="/"
                   className="nav-link dropdown-toggle"
@@ -110,20 +110,14 @@ function TopbarNavbar() {
                 </a>
                 <div className="dropdown-menu m-0 rounded-0">
                   <a href="/" className="dropdown-item">
-                    Latest Blog
-                  </a>
-                  <a href="/" className="dropdown-item">
                     Our Team
                   </a>
                   <a href="/" className="dropdown-item">
                     Testimonial
                   </a>
-                  <a href="/" className="dropdown-item">
-                    404 Page
-                  </a>
                 </div>
-              </div>
-              <a href="/" className="nav-item nav-link">
+              </div> */}
+              <a href="/contact" className="nav-item nav-link">
                 Contact
               </a>
             </div>

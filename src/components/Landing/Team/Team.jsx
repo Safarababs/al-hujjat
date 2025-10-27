@@ -41,14 +41,15 @@ function Team() {
             </div>
             <div className="col-lg-8 col-xl-7">
               <div className="team-item wow fadeIn" data-wow-delay="0.1s">
-                <h1>Anamul Hasan</h1>
+                <h1>Dr. Ghulam Jaffer Qumi</h1>
                 <h5 className="fw-normal fst-italic text-primary mb-4">
                   President
                 </h5>
                 <p className="mb-4">
-                  Anamul Hasan leads AL Hujjat with a vision for accessible,
-                  high-quality Shia Islamic education. His leadership ensures
-                  the academy stays rooted in faith and excellence.
+                  Molana Dr. Ghulam Jaffar Qumi leads AL Hujjat with a vision
+                  for accessible, high-quality Shia Islamic education. His
+                  leadership ensures the academy stays rooted in faith and
+                  excellence.
                 </p>
                 <div className="team-icon d-flex pb-4 mb-4 border-bottom border-primary">
                   <a className="btn btn-primary btn-lg-square me-2" href="/">
@@ -78,13 +79,13 @@ function Team() {
                   {
                     name: "Nahiyan Momen",
                     role: "Teacher",
-                    image: "img/team-3.jpg",
+                    image: "img/team-2.jpg",
                     delay: "0.4s",
                   },
                   {
                     name: "Asfaque Ali",
                     role: "Volunteer",
-                    image: "img/team-4.jpg",
+                    image: "img/team-2.jpg",
                     delay: "0.6s",
                   },
                 ].map((member, index) => (

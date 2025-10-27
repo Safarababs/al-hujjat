@@ -2,6 +2,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import TopbarNavbar from "./components/Header/Navbar";
 import Landing from "./components/Landing/Landing";
+import AboutPage from "./components/pages/about page/AboutPage";
+import Footer from "./components/Landing/Footer/Footer";
+import CoursesPage from "./components/pages/courses page/CoursesPage";
+import ContactPage from "./components/pages/Contact/ContactPage";
+import Events from "./components/pages/Events/Events";
+import Sermons from "./components/pages/Sermons/Sermons";
+import Page404 from "./components/pages/Page 404/Page404";
 
 const App = () => {
   return (
@@ -21,8 +28,15 @@ const App = () => {
       <TopbarNavbar />
 
       <Routes>
-        <Route path="/" element={<Landing />} />
+        <Route path="/" exact element={<Landing />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/courses" element={<CoursesPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/sermons" element={<Sermons />} />
+        <Route path="*" element={<Page404 />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };
