@@ -127,7 +127,7 @@ function About() {
             data-wow-delay="0.1s"
           >
             <div className="row g-4 align-items-center">
-              <div className="col-lg-2">
+              <div className="col-lg-4">
                 <i className="fa fa-mosque fa-5x text-white"></i>
               </div>
               <div className="col-lg-7 text-center text-lg-start">
@@ -135,11 +135,6 @@ function About() {
                   Every Muslim Needs To Realise The Importance Of The "Pillar"
                   Of Islam
                 </h1>
-              </div>
-              <div className="col-lg-3">
-                <a href="/" className="btn btn-light py-2 px-4">
-                  Learn More
-                </a>
               </div>
             </div>
           </div>

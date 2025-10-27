@@ -149,14 +149,14 @@ function Footer() {
         <div className="row">
           <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
             &copy;{" "}
-            <a className="border-bottom" href="/">
+            <a className="border-bottom" href="https://al-hujjat.netlify.app/">
               AL Hujjat Academy
             </a>
             , All Rights Reserved.
           </div>
           <div className="col-md-6 text-center text-md-end">
             Designed By{" "}
-            <a className="border-bottom" href="https://htmlcodexs.com">
+            <a className="border-bottom" href="https://al-hujjat.netlify.app/">
               Safar Abbas
             </a>
           </div>

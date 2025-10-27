@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Scheherazade+New&family=Noto+Nastaliq+Urdu&display=swap");
+
+.arabic-text {
+  font-family: "Scheherazade New", serif;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+
+  text-align: center;
+}
+
+.urdu-text {
+  font-family: "Noto Nastaliq Urdu", serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+
+  text-align: center;
+  direction: rtl;
+}

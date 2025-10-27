@@ -100,33 +100,48 @@ function TopbarNavbar() {
               <a href="/sermons" className="nav-item nav-link">
                 Sermons
               </a>
-              {/* <div className="nav-item dropdown">
+              <div className="nav-item dropdown">
                 <a
                   href="/"
                   className="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
                 >
-                  Pages
+                  Religious Services
                 </a>
                 <div className="dropdown-menu m-0 rounded-0">
-                  <a href="/" className="dropdown-item">
-                    Our Team
+                  <a href="/istikhara" className="dropdown-item">
+                    Istikhara Services
                   </a>
-                  <a href="/" className="dropdown-item">
-                    Testimonial
+                  <a href="/nikkah" className="dropdown-item">
+                    Online Nikkah
+                  </a>
+                  <a href="/marhoomeen" className="dropdown-item">
+                    Aamaal For Marhomeen
                   </a>
                 </div>
-              </div> */}
+              </div>
+              <div className="nav-item dropdown">
+                <a
+                  href="/"
+                  className="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                >
+                  knowledge Hub
+                </a>
+                <div className="dropdown-menu m-0 rounded-0">
+                  <a href="/studentportal" className="dropdown-item">
+                    Students Portal
+                  </a>
+
+                  <a href="/quranBanner" className="dropdown-item">
+                    Quran Recitations
+                  </a>
+                </div>
+              </div>
               <a href="/contact" className="nav-item nav-link">
                 Contact
               </a>
             </div>
-            <a
-              href="/"
-              className="btn btn-primary py-2 px-4 d-none d-xl-inline-block"
-            >
-              Donate
-            </a>
           </div>
         </nav>
       </div>

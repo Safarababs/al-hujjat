@@ -52,17 +52,17 @@ function Team() {
                   excellence.
                 </p>
                 <div className="team-icon d-flex pb-4 mb-4 border-bottom border-primary">
-                  <a className="btn btn-primary btn-lg-square me-2" href="/">
+                  <a
+                    className="btn btn-primary btn-lg-square me-2"
+                    href="https://www.facebook.com/share/1AKnFGnf7b/"
+                  >
                     <i className="fab fa-facebook-f"></i>
                   </a>
-                  <a className="btn btn-primary btn-lg-square me-2" href="/">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a className="btn btn-primary btn-lg-square me-2" href="/">
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                  <a className="btn btn-primary btn-lg-square" href="/">
-                    <i className="fab fa-linkedin-in"></i>
+                  <a
+                    className="btn btn-primary btn-lg-square me-2"
+                    href="https://youtube.com/@ghulamjafar2273?si=NuBz3whDOmhLFBgD"
+                  >
+                    <i className="fab fa-youtube"></i>
                   </a>
                 </div>
               </div>
@@ -103,32 +103,6 @@ function Team() {
                         <div className="team-content-inner">
                           <h5 className="mb-0">{member.name}</h5>
                           <p className="text-dark">{member.role}</p>
-                          <div className="team-icon d-flex align-items-center justify-content-center">
-                            <a
-                              className="btn btn-primary btn-sm-square me-2"
-                              href="/"
-                            >
-                              <i className="fab fa-facebook-f"></i>
-                            </a>
-                            <a
-                              className="btn btn-primary btn-sm-square me-2"
-                              href="/"
-                            >
-                              <i className="fab fa-twitter"></i>
-                            </a>
-                            <a
-                              className="btn btn-primary btn-sm-square me-2"
-                              href="/"
-                            >
-                              <i className="fab fa-instagram"></i>
-                            </a>
-                            <a
-                              className="btn btn-primary btn-sm-square"
-                              href="/"
-                            >
-                              <i className="fab fa-linkedin-in"></i>
-                            </a>
-                          </div>
                         </div>
                       </div>
                     </div>

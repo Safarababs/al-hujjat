@@ -9,6 +9,11 @@ import ContactPage from "./components/pages/Contact/ContactPage";
 import Events from "./components/pages/Events/Events";
 import Sermons from "./components/pages/Sermons/Sermons";
 import Page404 from "./components/pages/Page 404/Page404";
+import IstikharaServices from "./components/pages/Religious Services/IstikharaServices/IstikharaServices";
+import OnlineNikkah from "./components/pages/Religious Services/OnlineNikkah/OnlineNikkah";
+import AamaalForMarhomeen from "./components/pages/Religious Services/Aamal For Marhomeen/Marhomeen";
+import QuranVerseBanner from "./components/pages/Knowledge Hub/Quran Posts/QuranVerseBanner";
+import StudentPortal from "./components/pages/Knowledge Hub/Student Portal/StudentPortal";
 
 const App = () => {
   return (
@@ -34,6 +39,12 @@ const App = () => {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/events" element={<Events />} />
         <Route path="/sermons" element={<Sermons />} />
+        <Route path="/istikhara" element={<IstikharaServices />} />
+        <Route path="/nikkah" element={<OnlineNikkah />} />
+        <Route path="/marhoomeen" element={<AamaalForMarhomeen />} />
+        <Route path="/quranBanner" element={<QuranVerseBanner />} />
+        <Route path="/studentportal" element={<StudentPortal />} />
+
         <Route path="*" element={<Page404 />} />
       </Routes>
       <Footer />
