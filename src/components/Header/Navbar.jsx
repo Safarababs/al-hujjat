@@ -43,19 +43,21 @@ function TopbarNavbar() {
             <div className="col-lg-5 text-end">
               <div className="h-100 d-inline-flex align-items-center">
                 <span className="text-body">Follow Us:</span>
-                <a className="text-dark px-2" href="/">
+                <a
+                  className="text-dark px-2"
+                  href="https://www.facebook.com/share/1AKnFGnf7b/"
+                >
                   <i className="fab fa-facebook-f"></i>
                 </a>
-                <a className="text-dark px-2" href="/">
-                  <i className="fab fa-twitter"></i>
+
+                <a
+                  className="text-dark px-2"
+                  href="https://youtube.com/@ghulamjafar2273?si=NuBz3whDOmhLFBgD"
+                >
+                  <i className="fab fa-youtube"></i>
                 </a>
-                <a className="text-dark px-2" href="/">
-                  <i className="fab fa-linkedin-in"></i>
-                </a>
-                <a className="text-dark px-2" href="/">
-                  <i className="fab fa-instagram"></i>
-                </a>
-                <a className="text-body ps-4" href="/">
+
+                <a className="text-body ps-4" href="/signin">
                   <i className="fa fa-lock text-dark me-1"></i> Signup/login
                 </a>
               </div>
