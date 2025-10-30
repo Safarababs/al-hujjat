@@ -29,8 +29,8 @@ function TopbarNavbar() {
             <div className="col-lg-7 text-start">
               <div className="h-100 d-inline-flex align-items-center me-4">
                 <span className="fa fa-phone-alt me-2 text-dark"></span>
-                <a href="/" className="text-secondary">
-                  <span>+012 345 6789</span>
+                <a href="tel:+989368083260" className="text-secondary">
+                  <span>+98 936 808 3260</span>
                 </a>
               </div>
               <div className="h-100 d-inline-flex align-items-center">
@@ -142,6 +142,9 @@ function TopbarNavbar() {
               </div>
               <a href="/contact" className="nav-item nav-link">
                 Contact
+              </a>
+              <a href="/signin" className="nav-item nav-link">
+                Signup/Login
               </a>
             </div>
           </div>
