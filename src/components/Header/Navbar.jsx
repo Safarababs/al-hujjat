@@ -35,8 +35,11 @@ function TopbarNavbar() {
               </div>
               <div className="h-100 d-inline-flex align-items-center">
                 <span className="far fa-envelope me-2 text-dark"></span>
-                <a href="/" className="text-secondary">
-                  <span>info@example.com</span>
+                <a
+                  href="mailto:ghulamjafar125@gmail.com"
+                  className="text-secondary"
+                >
+                  <span>ghulamjafar125@gmail.com</span>
                 </a>
               </div>
             </div>

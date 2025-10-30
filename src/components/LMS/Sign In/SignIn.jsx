@@ -1,6 +1,9 @@
 // src/pages/SignIn.jsx
 import { useState, useEffect } from "react";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import {
+  signInWithEmailAndPassword,
+  sendPasswordResetEmail,
+} from "firebase/auth";
 import { auth } from "../../../firebase";
 import { Link, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -9,6 +12,7 @@ import { useAuth } from "../../../context/AuthContext";
 export default function SignIn() {
   const [form, setForm] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
+  const [info, setInfo] = useState(""); // for success messages like reset email sent
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const { role, user } = useAuth();
@@ -19,6 +23,7 @@ export default function SignIn() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
+    setInfo("");
     setLoading(true);
     try {
       await signInWithEmailAndPassword(auth, form.email, form.password);
@@ -28,6 +33,22 @@ export default function SignIn() {
       setError("Invalid credentials or network issue.");
     } finally {
       setLoading(false);
+    }
+  };
+
+  const handleResetPassword = async () => {
+    setError("");
+    setInfo("");
+    if (!form.email) {
+      setError("Please enter your email first to reset password.");
+      return;
+    }
+    try {
+      await sendPasswordResetEmail(auth, form.email);
+      setInfo("Password reset email sent. Check your inbox.");
+    } catch (err) {
+      console.error("Reset failed:", err);
+      setError("Failed to send reset email. Check the email address.");
     }
   };
 
@@ -81,6 +102,7 @@ export default function SignIn() {
       <div className="container py-5" style={{ maxWidth: 420 }}>
         <h3 className="mb-4">Sign in to your account</h3>
         {error && <div className="alert alert-danger">{error}</div>}
+        {info && <div className="alert alert-success">{info}</div>}
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label className="form-label">Email</label>
@@ -105,6 +127,15 @@ export default function SignIn() {
               required
               autoComplete="current-password"
             />
+            <p className="mt-2">
+              <button
+                type="button"
+                className="btn btn-link p-0"
+                onClick={handleResetPassword}
+              >
+                Forgot your password?
+              </button>
+            </p>
           </div>
           <button className="btn btn-primary w-100" disabled={loading}>
             {loading ? "Signing in..." : "Sign in"}
